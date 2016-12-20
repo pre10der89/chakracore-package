@@ -1,7 +1,26 @@
 version: 1.0.{build}
+max_jobs: 2
+image: Visual Studio 2015
 build_script:
-  - ps: >-
+- ps: >-
     git submodule update --init
+
+    md .\ChakraCore\Build\VcBuild\bin\x86_Release
+    md .\ChakraCore\Build\VcBuild\bin\x64_Release
+    md .\ChakraCore\Build\VcBuild\bin\arm_Release
+
+    md .\ChakraCore\Build\VcBuild\bin\x86_Release\buildlogs
+    md .\ChakraCore\Build\VcBuild\bin\x64_Release\buildlogs
+    md .\ChakraCore\Build\VcBuild\bin\arm_Release\buildlogs
+
+    # X86 Release Build2
+    .\ChakraCore\Build\scripts\run_build.ps1 -arch x86 -flavor Release -solutionFile ".\ChakraCore\Build\Chakra.Core.sln"-binpath ".\ChakraCore\Build\VcBuild\bin\x86_release\" -binDir ".\ChakraCore\Build\VcBuild\bin\x86_release\" -logFile ".\ChakraCore\Build\VcBuild\bin\x86_Release\build_log.txt"
+
+    # X64 Release Build
+    .\ChakraCore\Build\scripts\run_build.ps1 -arch x64 -flavor Release -solutionFile ".\ChakraCore\Build\Chakra.Core.sln"-binpath ".\ChakraCore\Build\VcBuild\bin\x64_release\" -binDir ".\ChakraCore\Build\VcBuild\bin\x64_release\" -logFile ".\ChakraCore\Build\VcBuild\bin\x64_Release\build_log.txt"
+
+    # ARM Release Build
+    .\ChakraCore\Build\scripts\run_build.ps1 -arch arm -flavor Release -solutionFile ".\ChakraCore\Build\Chakra.Core.sln"-binpath ".\ChakraCore\Build\VcBuild\bin\arm_release\" -binDir ".\ChakraCore\Build\VcBuild\bin\arm_release\" -logFile ".\ChakraCore\Build\VcBuild\bin\arm_Release\build_log.txt"
 after_build:
 - ps: .\NuGet\package.ps1
 artifacts:
