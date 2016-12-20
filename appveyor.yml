@@ -2,6 +2,9 @@ version: 1.0.{build}
 max_jobs: 2
 image: Visual Studio 2015
 
+init:
+  - ps: iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
+
 clone_script:
 - ps: git clone -q $("--branch=" + $Env:APPVEYOR_REPO_BRANCH) $("https://github.com/" + $Env:APPVEYOR_REPO_NAME + ".git") $Env:APPVEYOR_BUILD_FOLDER
 - ps: if (!$Env:APPVEYOR_PULL_REQUEST_NUMBER) {$("git checkout -qf " + $Env:APPVEYOR_REPO_COMMIT)}
@@ -35,3 +38,6 @@ after_build:
 artifacts:
 - path: .\NuGet\Artifacts\*.nupkg
   name: NuGet
+
+  on_finish:
+  - ps: $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))

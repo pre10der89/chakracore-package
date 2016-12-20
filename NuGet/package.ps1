@@ -39,4 +39,7 @@ Foreach ($nuspec in $(Get-Item *.nuspec))
 }
 
 # Delete compiled temporary nuspec.
-Remove-Item $compiledNuspec
+If (Test-Path $compiledNuspec)
+{
+	Remove-Item $compiledNuspec
+}
