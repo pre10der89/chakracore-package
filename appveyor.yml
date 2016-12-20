@@ -35,7 +35,7 @@ build_script:
 
 #    .\ChakraCore\Build\scripts\run_build.ps1 -arch arm -flavor Release -solutionFile ".\ChakraCore\Build\Chakra.Core.sln"-binpath ".\ChakraCore\Build\VcBuild\bin\arm_release\" -binDir ".\ChakraCore\Build\VcBuild\bin\arm_release\" -logFile ".\ChakraCore\Build\VcBuild\bin\arm_Release\build_log.txt"
 
-after_build:
+after_test:
 - ps: .\NuGet\package.ps1
 artifacts:
 - path: .\NuGet\Artifacts\*.nupkg
