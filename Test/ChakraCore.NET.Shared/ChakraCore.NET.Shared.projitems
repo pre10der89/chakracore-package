@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>a50c06c6-d840-46f0-8ba5-65dbd66607c7</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>ChakraCore.NET.Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)ChakraCoreWrapper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JavaScriptBackgroundWorkItemCallback.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JavaScriptBeforeCollectCallback.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JavaScriptContext.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JavaScriptEngineException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JavaScriptErrorCode.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JavaScriptException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JavaScriptFatalException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JavaScriptMemoryAllocationCallback.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JavaScriptMemoryEventType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JavaScriptNativeFunction.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JavaScriptObjectFinalizeCallback.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JavaScriptPropertyId.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JavaScriptRuntime.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JavaScriptRuntimeAttributes.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JavaScriptRuntimeVersion.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JavaScriptScriptException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JavaScriptSourceContext.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JavaScriptThreadServiceCallback.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JavaScriptUsageException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JavaScriptValue.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JavaScriptValueType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Native.cs" />
+  </ItemGroup>
+</Project>

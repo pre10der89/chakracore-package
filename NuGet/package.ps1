@@ -1,9 +1,9 @@
 $root = (split-path -parent $MyInvocation.MyCommand.Definition) + '\..'
 
-$targetNugetExe = "$root\NuGet\nuget.exe"
-
-$packageArtifacts = "$root\NuGet\Artifacts"
-$packageVersion = "$root\NuGet\.pack-version"
+$packageRoot = "$root\NuGet"
+$packageVersionFile = "$packageRoot\.pack-version"
+$packageArtifacts = "$packageRoot\Artifacts"
+$targetNugetExe = "$packageRoot\nuget.exe"
 
 If (Test-Path $packageArtifacts)
 {
@@ -22,14 +22,14 @@ If (!(Test-Path $targetNugetExe))
     Invoke-WebRequest $sourceNugetExe -OutFile $targetNugetExe
 }
 
-$versionStr = (Get-Content $packageVersion) 
+$versionStr = (Get-Content $packageVersionFile) 
 
 Write-Host "Setting .nuspec version tag to $versionStr"
 
 $compiledNuspec = "$root\nuget\compiled.nuspec"
 
 # Create new packages for any nuspec files that exist in this directory.
-Foreach ($nuspec in $(Get-Item *.nuspec))
+Foreach ($nuspec in $(Get-Item $packageRoot\*.nuspec))
 {
     $content = (Get-Content $nuspec)
     $content = $content -replace '\$version\$',$versionStr
