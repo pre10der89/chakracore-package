@@ -2,8 +2,8 @@ version: 1.0.{build}
 max_jobs: 2
 image: Visual Studio 2015
 
-before_build:
-	nuget restore ChakraCore\Build\Chakra.Core.sln
+# before_build:
+#	nuget restore ChakraCore\Build\Chakra.Core.sln
 
 build_script:
 - ps: >-
