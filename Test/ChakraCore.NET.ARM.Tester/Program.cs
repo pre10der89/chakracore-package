@@ -1,4 +1,4 @@
-﻿using ChakraCore.NET.Package.Tests;
+﻿using ChakraCore.NET.Tests;
 using System;
 
 namespace Chakra.Package.Tester

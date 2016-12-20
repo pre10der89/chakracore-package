@@ -15,8 +15,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DummyApp", "DummyApp\DummyA
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{E94FBF8D-A1EE-4A32-9FA4-133B0E7B456C}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ChakraCore.NET.Package.Tester.Shared", "Tests\ChakraCore.NET.Package.Shared.Tests\ChakraCore.NET.Package.Tester.Shared.shproj", "{1A954823-948C-42B7-943B-C2E2721E2B70}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NETStandard", "NETStandard", "{B1DB2186-B24F-476C-94AE-420FF7E9A1F8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{3504CA14-18AC-4F0D-B629-35ADF5D2A4A6}"
@@ -25,17 +23,31 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dummy", "Dummy", "{CE70C424
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChakraCore.NET.AnyCPU", "ChakraCore.NET.AnyCPU\ChakraCore.NET.AnyCPU.csproj", "{CFA11C2B-C884-4D8E-9655-95843E8F3285}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChakraCore.NET.AnyCPU.Tester", "Tests\ChakraCore.NET.AnyCPU.Tester\ChakraCore.NET.AnyCPU.Tester.csproj", "{69B6C090-1B47-4025-AAE3-2F6B7AEF5182}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ChakraCore.NET.Shared.Tests", "ChakraCore.NET.Shared.Tests\ChakraCore.NET.Shared.Tests.shproj", "{1190B30C-3932-44EE-89DC-66BBC3567259}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChakraCore.NET.AnyCPU.Tester", "ChakraCore.NET.AnyCPU.Tester\ChakraCore.NET.AnyCPU.Tester.csproj", "{69B6C090-1B47-4025-AAE3-2F6B7AEF5182}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChakraCore.NET.AnyCPU32Bit.Tester", "ChakraCore.NET.AnyCPU32Bit.Tester\ChakraCore.NET.AnyCPU32Bit.Tester.csproj", "{C5A244B0-83C9-4025-8771-6F0EA088F027}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChakraCore.NET.X86.Tester", "ChakraCore.NET.X86.Tester\ChakraCore.NET.X86.Tester.csproj", "{A9E7D0A6-8FAD-4293-934A-9C4071F4DFEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChakraCore.NET.X64.Tester", "ChakraCore.NET.X64.Tester\ChakraCore.NET.X64.Tester.csproj", "{D1E6BF84-ADE7-4715-9B8D-5AF49FCA7E0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChakraCore.NET.ARM.Tester", "ChakraCore.NET.ARM.Tester\ChakraCore.NET.ARM.Tester.csproj", "{D3843224-7922-45B7-8289-23DC96798A11}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		Tests\ChakraCore.NET.Package.Shared.Tests\ChakraCore.NET.Package.Shared.Tests.projitems*{1a954823-948c-42b7-943b-c2e2721e2b70}*SharedItemsImports = 13
+		ChakraCore.NET.Shared.Tests\ChakraCore.NET.Shared.Tests.projitems*{1190b30c-3932-44ee-89dc-66bbc3567259}*SharedItemsImports = 13
 		ChakraCore.NET.Shared\ChakraCore.NET.Shared.projitems*{69868276-afd9-4008-baf1-ad31a8a6881f}*SharedItemsImports = 4
-		Tests\ChakraCore.NET.Package.Shared.Tests\ChakraCore.NET.Package.Shared.Tests.projitems*{69b6c090-1b47-4025-aae3-2f6b7aef5182}*SharedItemsImports = 4
+		ChakraCore.NET.Shared.Tests\ChakraCore.NET.Shared.Tests.projitems*{69b6c090-1b47-4025-aae3-2f6b7aef5182}*SharedItemsImports = 4
 		ChakraCore.NET.Shared\ChakraCore.NET.Shared.projitems*{a50c06c6-d840-46f0-8ba5-65dbd66607c7}*SharedItemsImports = 13
+		ChakraCore.NET.Shared.Tests\ChakraCore.NET.Shared.Tests.projitems*{a9e7d0a6-8fad-4293-934a-9c4071f4dfec}*SharedItemsImports = 4
 		ChakraCore.NET.Shared\ChakraCore.NET.Shared.projitems*{b24fba72-74cd-4c0c-9bc0-8b6173339894}*SharedItemsImports = 4
+		ChakraCore.NET.Shared.Tests\ChakraCore.NET.Shared.Tests.projitems*{c5a244b0-83c9-4025-8771-6f0ea088f027}*SharedItemsImports = 4
 		ChakraCore.NET.Shared\ChakraCore.NET.Shared.projitems*{c8b55441-0fa8-4376-a31d-65ae8ec64d3d}*SharedItemsImports = 4
 		ChakraCore.NET.Shared\ChakraCore.NET.Shared.projitems*{cfa11c2b-c884-4d8e-9655-95843e8f3285}*SharedItemsImports = 4
+		ChakraCore.NET.Shared.Tests\ChakraCore.NET.Shared.Tests.projitems*{d1e6bf84-ade7-4715-9b8d-5af49fca7e0b}*SharedItemsImports = 4
+		ChakraCore.NET.Shared.Tests\ChakraCore.NET.Shared.Tests.projitems*{d3843224-7922-45b7-8289-23dc96798a11}*SharedItemsImports = 4
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -92,9 +104,7 @@ Global
 		{CFA11C2B-C884-4D8E-9655-95843E8F3285}.Debug|ARM.ActiveCfg = Debug|Any CPU
 		{CFA11C2B-C884-4D8E-9655-95843E8F3285}.Debug|ARM.Build.0 = Debug|Any CPU
 		{CFA11C2B-C884-4D8E-9655-95843E8F3285}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{CFA11C2B-C884-4D8E-9655-95843E8F3285}.Debug|x64.Build.0 = Debug|Any CPU
 		{CFA11C2B-C884-4D8E-9655-95843E8F3285}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{CFA11C2B-C884-4D8E-9655-95843E8F3285}.Debug|x86.Build.0 = Debug|Any CPU
 		{CFA11C2B-C884-4D8E-9655-95843E8F3285}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CFA11C2B-C884-4D8E-9655-95843E8F3285}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CFA11C2B-C884-4D8E-9655-95843E8F3285}.Release|ARM.ActiveCfg = Release|Any CPU
@@ -108,9 +118,7 @@ Global
 		{69B6C090-1B47-4025-AAE3-2F6B7AEF5182}.Debug|ARM.ActiveCfg = Debug|Any CPU
 		{69B6C090-1B47-4025-AAE3-2F6B7AEF5182}.Debug|ARM.Build.0 = Debug|Any CPU
 		{69B6C090-1B47-4025-AAE3-2F6B7AEF5182}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{69B6C090-1B47-4025-AAE3-2F6B7AEF5182}.Debug|x64.Build.0 = Debug|Any CPU
 		{69B6C090-1B47-4025-AAE3-2F6B7AEF5182}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{69B6C090-1B47-4025-AAE3-2F6B7AEF5182}.Debug|x86.Build.0 = Debug|Any CPU
 		{69B6C090-1B47-4025-AAE3-2F6B7AEF5182}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69B6C090-1B47-4025-AAE3-2F6B7AEF5182}.Release|Any CPU.Build.0 = Release|Any CPU
 		{69B6C090-1B47-4025-AAE3-2F6B7AEF5182}.Release|ARM.ActiveCfg = Release|Any CPU
@@ -119,6 +127,56 @@ Global
 		{69B6C090-1B47-4025-AAE3-2F6B7AEF5182}.Release|x64.Build.0 = Release|Any CPU
 		{69B6C090-1B47-4025-AAE3-2F6B7AEF5182}.Release|x86.ActiveCfg = Release|Any CPU
 		{69B6C090-1B47-4025-AAE3-2F6B7AEF5182}.Release|x86.Build.0 = Release|Any CPU
+		{C5A244B0-83C9-4025-8771-6F0EA088F027}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5A244B0-83C9-4025-8771-6F0EA088F027}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5A244B0-83C9-4025-8771-6F0EA088F027}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{C5A244B0-83C9-4025-8771-6F0EA088F027}.Debug|ARM.Build.0 = Debug|Any CPU
+		{C5A244B0-83C9-4025-8771-6F0EA088F027}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{C5A244B0-83C9-4025-8771-6F0EA088F027}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C5A244B0-83C9-4025-8771-6F0EA088F027}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5A244B0-83C9-4025-8771-6F0EA088F027}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5A244B0-83C9-4025-8771-6F0EA088F027}.Release|ARM.ActiveCfg = Release|Any CPU
+		{C5A244B0-83C9-4025-8771-6F0EA088F027}.Release|ARM.Build.0 = Release|Any CPU
+		{C5A244B0-83C9-4025-8771-6F0EA088F027}.Release|x64.ActiveCfg = Release|Any CPU
+		{C5A244B0-83C9-4025-8771-6F0EA088F027}.Release|x64.Build.0 = Release|Any CPU
+		{C5A244B0-83C9-4025-8771-6F0EA088F027}.Release|x86.ActiveCfg = Release|Any CPU
+		{C5A244B0-83C9-4025-8771-6F0EA088F027}.Release|x86.Build.0 = Release|Any CPU
+		{A9E7D0A6-8FAD-4293-934A-9C4071F4DFEC}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{A9E7D0A6-8FAD-4293-934A-9C4071F4DFEC}.Debug|ARM.ActiveCfg = Debug|x86
+		{A9E7D0A6-8FAD-4293-934A-9C4071F4DFEC}.Debug|x64.ActiveCfg = Debug|x86
+		{A9E7D0A6-8FAD-4293-934A-9C4071F4DFEC}.Debug|x86.ActiveCfg = Debug|x86
+		{A9E7D0A6-8FAD-4293-934A-9C4071F4DFEC}.Debug|x86.Build.0 = Debug|x86
+		{A9E7D0A6-8FAD-4293-934A-9C4071F4DFEC}.Release|Any CPU.ActiveCfg = Release|x86
+		{A9E7D0A6-8FAD-4293-934A-9C4071F4DFEC}.Release|ARM.ActiveCfg = Release|x86
+		{A9E7D0A6-8FAD-4293-934A-9C4071F4DFEC}.Release|x64.ActiveCfg = Release|x86
+		{A9E7D0A6-8FAD-4293-934A-9C4071F4DFEC}.Release|x86.ActiveCfg = Release|x86
+		{A9E7D0A6-8FAD-4293-934A-9C4071F4DFEC}.Release|x86.Build.0 = Release|x86
+		{D1E6BF84-ADE7-4715-9B8D-5AF49FCA7E0B}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{D1E6BF84-ADE7-4715-9B8D-5AF49FCA7E0B}.Debug|ARM.ActiveCfg = Debug|x64
+		{D1E6BF84-ADE7-4715-9B8D-5AF49FCA7E0B}.Debug|x64.ActiveCfg = Debug|x64
+		{D1E6BF84-ADE7-4715-9B8D-5AF49FCA7E0B}.Debug|x64.Build.0 = Debug|x64
+		{D1E6BF84-ADE7-4715-9B8D-5AF49FCA7E0B}.Debug|x86.ActiveCfg = Debug|x64
+		{D1E6BF84-ADE7-4715-9B8D-5AF49FCA7E0B}.Release|Any CPU.ActiveCfg = Release|x64
+		{D1E6BF84-ADE7-4715-9B8D-5AF49FCA7E0B}.Release|ARM.ActiveCfg = Release|x64
+		{D1E6BF84-ADE7-4715-9B8D-5AF49FCA7E0B}.Release|x64.ActiveCfg = Release|x64
+		{D1E6BF84-ADE7-4715-9B8D-5AF49FCA7E0B}.Release|x64.Build.0 = Release|x64
+		{D1E6BF84-ADE7-4715-9B8D-5AF49FCA7E0B}.Release|x86.ActiveCfg = Release|x64
+		{D3843224-7922-45B7-8289-23DC96798A11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3843224-7922-45B7-8289-23DC96798A11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3843224-7922-45B7-8289-23DC96798A11}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{D3843224-7922-45B7-8289-23DC96798A11}.Debug|ARM.Build.0 = Debug|Any CPU
+		{D3843224-7922-45B7-8289-23DC96798A11}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{D3843224-7922-45B7-8289-23DC96798A11}.Debug|x64.Build.0 = Debug|Any CPU
+		{D3843224-7922-45B7-8289-23DC96798A11}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D3843224-7922-45B7-8289-23DC96798A11}.Debug|x86.Build.0 = Debug|Any CPU
+		{D3843224-7922-45B7-8289-23DC96798A11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3843224-7922-45B7-8289-23DC96798A11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3843224-7922-45B7-8289-23DC96798A11}.Release|ARM.ActiveCfg = Release|Any CPU
+		{D3843224-7922-45B7-8289-23DC96798A11}.Release|ARM.Build.0 = Release|Any CPU
+		{D3843224-7922-45B7-8289-23DC96798A11}.Release|x64.ActiveCfg = Release|Any CPU
+		{D3843224-7922-45B7-8289-23DC96798A11}.Release|x64.Build.0 = Release|Any CPU
+		{D3843224-7922-45B7-8289-23DC96798A11}.Release|x86.ActiveCfg = Release|Any CPU
+		{D3843224-7922-45B7-8289-23DC96798A11}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -129,8 +187,12 @@ Global
 		{69868276-AFD9-4008-BAF1-AD31A8A6881F} = {B1DB2186-B24F-476C-94AE-420FF7E9A1F8}
 		{C8B55441-0FA8-4376-A31D-65AE8EC64D3D} = {B1DB2186-B24F-476C-94AE-420FF7E9A1F8}
 		{CF09FED1-4B4C-47DA-876E-527B97FD531D} = {CE70C424-924E-439A-82B8-3B6E0F733EEC}
-		{1A954823-948C-42B7-943B-C2E2721E2B70} = {3504CA14-18AC-4F0D-B629-35ADF5D2A4A6}
 		{CFA11C2B-C884-4D8E-9655-95843E8F3285} = {B1DB2186-B24F-476C-94AE-420FF7E9A1F8}
+		{1190B30C-3932-44EE-89DC-66BBC3567259} = {3504CA14-18AC-4F0D-B629-35ADF5D2A4A6}
 		{69B6C090-1B47-4025-AAE3-2F6B7AEF5182} = {E94FBF8D-A1EE-4A32-9FA4-133B0E7B456C}
+		{C5A244B0-83C9-4025-8771-6F0EA088F027} = {E94FBF8D-A1EE-4A32-9FA4-133B0E7B456C}
+		{A9E7D0A6-8FAD-4293-934A-9C4071F4DFEC} = {E94FBF8D-A1EE-4A32-9FA4-133B0E7B456C}
+		{D1E6BF84-ADE7-4715-9B8D-5AF49FCA7E0B} = {E94FBF8D-A1EE-4A32-9FA4-133B0E7B456C}
+		{D3843224-7922-45B7-8289-23DC96798A11} = {E94FBF8D-A1EE-4A32-9FA4-133B0E7B456C}
 	EndGlobalSection
 EndGlobal

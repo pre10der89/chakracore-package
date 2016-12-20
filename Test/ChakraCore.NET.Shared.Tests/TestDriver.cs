@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Reflection;
 using System.Text;
 
-namespace ChakraCore.NET.Package.Tests
+namespace ChakraCore.NET.Tests
 {
     public class TestDriver
     {
