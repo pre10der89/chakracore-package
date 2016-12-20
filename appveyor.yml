@@ -1,8 +1,7 @@
 version: 1.0.{build}
-before_build:
-- ps: nuget restore ChakraCore\Build\Chakra.Core.sln
-build:
-  verbosity: normal
+build_script:
+  - ps: >-
+    git submodule update --init
 after_build:
 - ps: .\NuGet\package.ps1
 artifacts:
