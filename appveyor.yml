@@ -31,9 +31,9 @@ build_script:
 - ps: >-
     .\ChakraCore\Build\scripts\run_build.ps1 -arch x86 -flavor Release -solutionFile ".\ChakraCore\Build\Chakra.Core.sln"-binpath ".\ChakraCore\Build\VcBuild\bin\x86_release\" -binDir ".\ChakraCore\Build\VcBuild\bin\x86_release\" -logFile ".\ChakraCore\Build\VcBuild\bin\x86_Release\build_log.txt"
 
-#    .\ChakraCore\Build\scripts\run_build.ps1 -arch x64 -flavor Release -solutionFile ".\ChakraCore\Build\Chakra.Core.sln"-binpath ".\ChakraCore\Build\VcBuild\bin\x64_release\" -binDir ".\ChakraCore\Build\VcBuild\bin\x64_release\" -logFile ".\ChakraCore\Build\VcBuild\bin\x64_Release\build_log.txt"
+    .\ChakraCore\Build\scripts\run_build.ps1 -arch x64 -flavor Release -solutionFile ".\ChakraCore\Build\Chakra.Core.sln"-binpath ".\ChakraCore\Build\VcBuild\bin\x64_release\" -binDir ".\ChakraCore\Build\VcBuild\bin\x64_release\" -logFile ".\ChakraCore\Build\VcBuild\bin\x64_Release\build_log.txt"
 
-#    .\ChakraCore\Build\scripts\run_build.ps1 -arch arm -flavor Release -solutionFile ".\ChakraCore\Build\Chakra.Core.sln"-binpath ".\ChakraCore\Build\VcBuild\bin\arm_release\" -binDir ".\ChakraCore\Build\VcBuild\bin\arm_release\" -logFile ".\ChakraCore\Build\VcBuild\bin\arm_Release\build_log.txt"
+    .\ChakraCore\Build\scripts\run_build.ps1 -arch arm -flavor Release -solutionFile ".\ChakraCore\Build\Chakra.Core.sln"-binpath ".\ChakraCore\Build\VcBuild\bin\arm_release\" -binDir ".\ChakraCore\Build\VcBuild\bin\arm_release\" -logFile ".\ChakraCore\Build\VcBuild\bin\arm_Release\build_log.txt"
 
 after_test:
 - ps: .\NuGet\package.ps1
