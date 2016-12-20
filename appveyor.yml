@@ -11,11 +11,15 @@ clone_script:
 before_build:
 - ps: >-
     md .\ChakraCore\Build\VcBuild\bin\x86_Release
+
     md .\ChakraCore\Build\VcBuild\bin\x64_Release
+
     md .\ChakraCore\Build\VcBuild\bin\arm_Release
 
     md .\ChakraCore\Build\VcBuild\bin\x86_Release\buildlogs
+
     md .\ChakraCore\Build\VcBuild\bin\x64_Release\buildlogs
+
     md .\ChakraCore\Build\VcBuild\bin\arm_Release\buildlogs
 
 build_script:
