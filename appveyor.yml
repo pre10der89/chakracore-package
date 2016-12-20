@@ -1,9 +1,13 @@
 version: 1.0.{build}
+max_jobs: 2
+image: Visual Studio 2015
+
+before_build:
+	nuget restore ChakraCore\Build\Chakra.Core.sln
+
 build_script:
 - ps: >-
     git submodule update --init
-
-	nuget restore ChakraCore\Build\Chakra.Core.sln
 
 	md .\ChakraCore\Build\VcBuild\bin\x86_Release
 	md .\ChakraCore\Build\VcBuild\bin\x64_Release
