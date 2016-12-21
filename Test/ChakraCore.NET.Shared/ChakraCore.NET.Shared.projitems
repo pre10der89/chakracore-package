@@ -9,7 +9,7 @@
     <Import_RootNamespace>ChakraCore.NET.Shared</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="$(MSBuildThisFileDirectory)ChakraCoreWrapper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JavaScriptEngine.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)JavaScriptBackgroundWorkItemCallback.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)JavaScriptBeforeCollectCallback.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)JavaScriptContext.cs" />

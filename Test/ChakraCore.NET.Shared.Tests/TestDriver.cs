@@ -1,7 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using ChakraCore.NET;
+using System;
 using System.Reflection;
-using System.Text;
 
 namespace ChakraCore.NET.Tests
 {
@@ -16,18 +15,20 @@ namespace ChakraCore.NET.Tests
 
             try
             {
-                var chakraCoreDriver = new ChakraCoreWrapper();
-
-                JavaScriptRuntime jsRuntime;
-
-                var createErrorCode = chakraCoreDriver.CreateRuntime(JavaScriptRuntimeAttributes.None, out jsRuntime);
-
-                if (createErrorCode == JavaScriptErrorCode.NoError)
+                using (var javaScriptEngine = new JavaScriptEngine())
                 {
-                    chakraCoreDriver.DisposeRuntime(jsRuntime);
-                }
+                    // The Script...
+                    string script = "(()=>{return \'Hello world!\';})()";
 
-                success = true;
+                    var javaScriptValue = javaScriptEngine.RunScript(script);
+
+                    var stringValue = javaScriptEngine.ConvertValueToString(javaScriptValue);
+
+                    if ( string.Compare("Hello world!", stringValue, false) == 0 )
+                    {
+                        success = true;
+                    }
+                }
             }
             catch (Exception ex)
             {
