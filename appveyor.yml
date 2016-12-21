@@ -40,5 +40,11 @@ after_test:
 artifacts:
 - path: .\NuGet\Artifacts\*.nupkg
   name: NuGet
+deploy:
+- provider: NuGet
+  server: https://www.myget.org/F/pre10der89/api/v2/package
+  api_key:
+    secure: jOj/ny7ne6h2lT0QMRt1Vac5YpOcL/Rvdcn5n4z4Iz0KiKMqYj5U/9KZmBMP2JGD
+  artifact: NuGet\Artifacts\Microsoft.ChakraCore.2.0*
 
   
