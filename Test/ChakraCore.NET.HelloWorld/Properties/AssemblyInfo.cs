@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("DummyApp")]
+[assembly: AssemblyTitle("ChakraCore.NET.HelloWorld")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("BlueJeans")]
-[assembly: AssemblyProduct("DummyApp")]
+[assembly: AssemblyProduct("ChakraCore.NET.HelloWorld")]
 [assembly: AssemblyCopyright("Copyright © BlueJeans 2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("cf09fed1-4b4c-47da-876e-527b97fd531d")]
+[assembly: Guid("d1704ad2-0adf-46bd-beca-69ac6e0795c3")]
 
 // Version information for an assembly consists of the following four values:
 //
